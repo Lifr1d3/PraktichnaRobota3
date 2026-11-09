@@ -1,0 +1,163 @@
+/* ===== Загальні стилі сторінки ===== */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+
+    /* Фонове зображення з повторенням */
+    background-color: #e8f1fb;
+    background-image: url("images/fon.jpg");
+    background-repeat: repeat;
+}
+
+/* Обводка,в якій лежить весь сайт */
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Цей клас прибирає обтікання (float) */
+.clear {
+    clear: both;
+}
+
+
+/* ===== Header ===== */
+header {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+
+    /* Прозорий фон: rgba, останнє число - прозорість */
+    background-color: rgba(30, 95, 168, 0.85);
+
+    /* Тінь для блоку */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    /* Тінь для тексту */
+    text-shadow: 2px 2px 4px #000000;
+}
+
+header p {
+    margin: 8px 0 0 0;
+}
+
+
+/* ===== Навігаційна панель ===== */
+nav {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Кнопки в меню, вони стоять в ряд завдяки float */
+.knopka {
+    float: left;
+    display: block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #1e5fa8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Що буде, коли навести мишку на кнопку */
+.knopka:hover {
+    background-color: #f39c12;
+    color: black;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+/* ===== Main ===== */
+main {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #1e5fa8;
+}
+
+/* Блок тексту в рамці */
+.text-box {
+    border: 2px solid #1e5fa8;
+    padding: 15px;
+    background-color: rgba(220, 235, 250, 0.7);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Перша фотографія-зліва,текст обтікає її */
+.photo1 {
+    float: left;
+    width: 300px;
+    margin: 0 20px 10px 0;
+    border: 3px solid #1e5fa8;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Друга фотографія маленька-справа */
+.photo2 {
+    float: right;
+    width: 150px;
+    margin: 0 0 10px 20px;
+    border: 3px solid #1e5fa8;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Посилання у вигляді кнопок */
+.external-link {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 8px 15px;
+    background-color: #1e5fa8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.external-link:hover {
+    background-color: #f39c12;
+    color: black;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Картинка-посилання */
+.image-link img {
+    border: 3px solid #1e5fa8;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.image-link:hover img {
+    border-color: #f39c12;
+}
+
+
+/* ===== Footer ===== */
+footer {
+    clear: both;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    background-color: rgba(30, 95, 168, 0.85);
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.4);
+}
+
+footer p {
+    margin: 5px 0;
+}
